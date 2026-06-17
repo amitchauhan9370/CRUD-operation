@@ -41,7 +41,7 @@ app.post("/create", async (req,res)=>{
         email,
         image
     });
-    res.send(createdUser);
+    res.redirect("/read");
 });
 
 const PORT = process.env.PORT || 3000;
